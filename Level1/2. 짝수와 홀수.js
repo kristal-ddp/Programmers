@@ -8,5 +8,5 @@ num은 int 범위의 정수입니다.
 */
 
 function solution(num) {
-    return num % 2 == 0 ? "Even" : "Odd";
+    return num % 2 === 0 ? "Even" : "Odd";
 }
