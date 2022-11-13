@@ -10,9 +10,11 @@ n은 1이상, 50000000000000 이하인 양의 정수입니다.
 function solution(n) {
     
     // 양의 정수 n = 양의 정수 x의 제곱
-    // → Math.sqrt(n) % 1 === 0
+    // → Math.sqrt(n) % 1 === 0 (정수는 1로 나누었을 때, 나머지가 0이다)
     return Math.sqrt(n) % 1 === 0 ? Math.pow(Math.sqrt(n) + 1, 2) : -1;
 }
 
 // n = x^2
 // x = Math.sqrt(n)
+// Math.sqrt(x) x의 제곱근
+// Math.pow(x, n) : x의 n승
