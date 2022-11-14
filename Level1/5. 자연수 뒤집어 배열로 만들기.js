@@ -8,7 +8,9 @@ n은 10,000,000,000이하인 자연수입니다.
 
 function solution(n) {
     
-    // 자연수 n → String → split : 하나씩 자름 → reverse : 거꾸로
-    // map(Number) : String인 배열의 각 요소를 숫자로 형변환
-    return String(n).split("").reverse().map((data) => Number(data));
+    // 정수 n의 각 자릿수를 배열로 변환하여
+    // 내림차순으로 정렬하고, 새로운 정수 n'로 변환
+    // return (n+"").split("").sort((a,b) => b - a).join('')/1; // 방법1
+    return Number((n+"").split("").sort().reverse().join('')); // 방법2
+    
 }
