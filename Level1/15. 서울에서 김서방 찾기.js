@@ -10,7 +10,7 @@ seoul의 원소는 길이 1 이상, 20 이하인 문자열입니다.
 
 function solution(seoul) {
     
-    // const index = seoul.findIndex((word) => word === "Kim"); // Solve1
+    // const index = seoul.findIndex(word => word === "Kim"); // Solve1
     const index = seoul.indexOf("Kim"); // Solve2
     
     return "김서방은 " + index + "에 있다";

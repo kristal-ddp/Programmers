@@ -12,14 +12,14 @@ array는 길이 1 이상인 배열입니다.
 
 function solution(arr, divisor) {
     
-    // Sovle1
+    // Sovle1 : map
     // const answer = [];
     
-    // arr.map((data) => {
+    // arr.map(data => {
     //     data % divisor === 0 && answer.push(data);
     // })
 
-    // Solve2
+    // Solve2 : filter
     const answer = arr.filter(data => data % divisor === 0);
     
     return answer.length ? answer.sort((a,b) => a - b) : [-1];
